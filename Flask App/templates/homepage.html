@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<hhtl>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='style.css') }}">        
+        <title>Number2Words</title>
+    </head>
+    <body>
+        <nav class="navbar navbar-light bg-light">
+            <a class="navbar-brand">Number to word Converter Flask App</a>
+        </nav>
+        <div id="main" class="container">
+            <h1>Enter the Number to Convert to Words</h1>
+            <form action="/result" method="POST">
+                <input name="num" placeholder="Enter here" type="number">
+                <button type="submit" class="btn btn-outline-dark">Convert</button>
+            </form>
+        </div>
+    </body>
+</hhtl>
